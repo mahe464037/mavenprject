@@ -68,6 +68,7 @@ public void loginwithvalidds()
  @Test  (priority=4)  
  public void loginwithvalidds1()
  {
+	 System.out.println("User able to login with valid data");
 	 driver.findElement(By.xpath("//input[@name='userName']")).sendKeys(prop.getProperty("username1"));
 		driver.findElement(By.xpath("//input[@name='password']")).sendKeys(prop.getProperty("password1"));
 		driver.findElement(By.xpath("//input[@name='login']")).click();
