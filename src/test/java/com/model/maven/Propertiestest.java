@@ -29,6 +29,7 @@ public class Propertiestest{
   public void openbrowser() throws IOException
   
   {
+	  System.out.println("Chromepath is: "+prop1.getProperty("IE"));  
 	  FileInputStream fis=new FileInputStream("D:\\EclipseWorkSpace\\PropertiesFile\\src\\com\\propertiesmodel\\parameter.properties");
       prop.load(fis);
       FileInputStream fis1=new FileInputStream("D:\\EclipseWorkSpace\\PropertiesFile\\src\\com\\propertiesmodel\\config.properties");
